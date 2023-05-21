@@ -1,0 +1,38 @@
+.loginCss {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(187,238,139,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.input-group-append span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.5rem;
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    
+    
+  }
+  
+  .input-group-append span:hover {
+    color: #555;
+    background-color: #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+.input-group-prepend{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #f8f9fa;
+    margin-right:  3px;
+    border: none;
+   
+}

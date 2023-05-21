@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencias de Node.js
+/servidor/node_modules
+
+# Archivos de configuración de entorno
+#/servidor/.env
+#/servidor/.env.local
+#/servidor/.env.*.local
+
+# Archivos de registro
+#/servidor/logs
+#/servidor/*.log
+
+# Carpeta de compilación de React
+#/servidor/build
+
+# Dependencias
+cliente/node_modules
+
+# Archivos de compilación
+#cliente/build
+#cliente/dist
+
+# Archivos de entorno
+#cliente/.env.local
+#cliente/.env.development.local
+#cliente/.env.test.local
+#cliente/.env.production.local
+#cliente/.env

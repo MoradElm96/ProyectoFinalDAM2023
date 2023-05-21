@@ -1,0 +1,34 @@
+.welcome-screen {
+  
+    background-color: #5eefc1;
+    background-image: url("../../public/img/frutass.png");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: -200px 0; /* Inicialmente, la imagen estará desplazada -200px en el eje X */
+    animation: moveBackground 50s linear infinite; /* La animación durará 10 segundos y se repetirá infinitamente */
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      background-position: -200px 0; /* Al inicio de la animación, la imagen está desplazada -200px en el eje X */
+    }
+    100% {
+      background-position: 200px 0; /* Al final de la animación, la imagen estará desplazada 200px en el eje X */
+    }
+  }
+
+
+
+
+
+  
+  .welcome-container{
+
+    opacity: 90%;
+    
+  }
+
+  .welcome-container p {
+    
+ 
+}

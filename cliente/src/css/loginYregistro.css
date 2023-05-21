@@ -1,0 +1,63 @@
+.formulariosIniciales {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../public/img/fondoVerde.jpg");
+}
+
+
+.input-group-append span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.5rem;
+    background-color: #f8f9fa;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    
+    
+  }
+  
+  .input-group-append span:hover {
+    color: #555;
+    background-color: #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+.input-group-prepend{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #f8f9fa;
+    margin-right:  3px;
+    border: none;
+   
+}
+
+.card-form {
+    font-family: Arial, sans-serif;
+    height: auto; /*altura card*/
+    width: auto;
+    border: 6px solid #42e676;
+    border-radius: 10px;
+    padding: 40px ;
+    background-color: #deedf0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+   
+  }
+
+  .card-form-body {
+
+    text-align: center;
+    margin-bottom: 0.25rem;
+    padding: 5px;
+   
+  
+    
+  }

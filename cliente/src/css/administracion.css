@@ -1,0 +1,43 @@
+.tablausuarios-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.tablausuarios-table {
+    background-color: #b0c4de;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 20px;
+    overflow-y: auto;
+    max-height: 400px; /* ajusta el valor a tus necesidades */
+  }
+  
+  .tablausuarios-thead th {
+    background-color: #000080;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+  }
+  
+  .tablausuarios-thead th:first-child {
+    border-top-left-radius: 20px;
+  }
+  
+  .tablausuarios-thead th:last-child {
+    border-top-right-radius: 20px;
+  }
+
+.tablausuarios-td {
+  text-align: center;
+  padding: 8px;
+}
+
+.tablausuarios-btn-eliminar {
+  width: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,17 @@
+.list-group-item  {
+    background-color: #56aebd;
+  }
+
+  .list-group-item a{
+    color: white;
+  }
+
+
+  .list-group-item a:hover {
+    font-size: 20px;
+  }
+  
+  .list-group-item a:active {
+    font-size: 24px;
+
+  }

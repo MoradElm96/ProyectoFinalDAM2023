@@ -1,0 +1,5 @@
+.main-children {
+    min-height: calc(75.5vh - 60px);
+    padding-bottom: 60px;
+
+  }

@@ -1,0 +1,25 @@
+.menuCss {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(187,238,139,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.text-center {
+    text-align: center;
+  }
+  
+  #carouselExampleSlidesOnly {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .carousel-item img {
+    height: 400px;
+    object-fit: contain;
+  }
+  
+  

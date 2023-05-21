@@ -1,0 +1,38 @@
+.container-alimento {
+
+  background-color: #57C5B6;
+  padding-bottom:  5px;
+}
+
+.card-Alimento {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card-Alimento:hover {
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  }
+  
+  .card-Alimento img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-Alimento .card-body {
+    padding: 20px;
+  }
+  
+  .card-Alimento h5.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-Alimento p.card-text {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  

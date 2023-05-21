@@ -1,0 +1,43 @@
+.container-perfil{
+    background-color: #B0C4DE;
+}
+
+.container-perfil {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container-perfil {
+      max-width: 500px;
+      font-size: 14px;
+    }
+  }
+
+  .input-group label {
+    margin-right: 15px;
+    font-size: 20px;
+  }
+  
+  .btn-lg {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+  }
+  
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label input[type="checkbox"] {
+    margin-right: 10px;
+    
+  }
+  

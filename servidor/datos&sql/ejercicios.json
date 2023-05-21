@@ -1,0 +1,332 @@
+{
+  "bajar-peso": {
+    "Lunes": [
+      {
+        "exercise": "Sentadillas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Fondos de tríceps",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Burpees",
+        "reps": 10,
+        "sets": 3
+      },
+      {
+        "exercise": "Plancha",
+        "reps": 30,
+        "sets": 3
+      },
+      {
+        "exercise": "Zancadas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Flexiones",
+        "reps": 12,
+        "sets": 3
+      }
+    ],
+    
+    "Martes": [
+      {
+        "exercise": "Carrera continua",
+        "duration": "30 minutos"
+      },
+      {
+        "exercise": "Saltos",
+        "reps": 30,
+        "sets": 3
+      },
+      {
+        "exercise": "Escalador",
+        "reps": 20,
+        "sets": 3
+      },
+      {
+        "exercise": "Zancadas con salto",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Plancha lateral",
+        "reps": "30 segundos",
+        "sets": 3
+      }
+    ],
+
+    "Miércoles": [
+      {
+        "exercise": "Press de banca",
+        "reps": 10,
+        "sets": 3
+      },
+      {
+        "exercise": "Peso muerto",
+        "reps": 10,
+        "sets": 3
+      },
+      {
+        "exercise": "Curl de bíceps con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Sentadillas con salto",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones laterales de hombros",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones de pantorrillas con mancuernas",
+        "reps": 15,
+        "sets": 3
+      }
+    ],
+
+    
+    "Viernes": [
+      {
+        "exercise": "Remo con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Press militar con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones frontales de hombros",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Crunches",
+        "reps": 15,
+        "sets": 3
+      },
+      {
+        "exercise": "Plancha lateral",
+        "reps": "30 segundos",
+        "sets": 3
+      },
+      {
+        "exercise": "Mountain climbers",
+        "reps": 20,
+        "sets": 3
+      }
+    ]
+  },
+
+  "subir-peso": {
+    "Lunes": [
+      {
+        "exercise": "Sentadillas",
+        "reps": 8,
+        "sets": 4
+      },
+      {
+        "exercise": "Press de banca",
+        "reps": 8,
+        "sets": 4
+      },
+      {
+        "exercise": "Remo con barra",
+        "reps": 8,
+        "sets": 4
+      },
+      {
+        "exercise": "Curl de bíceps con barra",
+        "reps": 10,
+        "sets": 4
+      },
+      {
+        "exercise": "Press francés",
+        "reps": 10,
+        "sets": 4
+      },
+      {
+        "exercise": "Elevaciones laterales de hombros",
+        "reps": 12,
+        "sets": 3
+      }
+    ],
+    "Miércoles": [
+      {
+        "exercise": "Peso muerto",
+        "reps": 6,
+        "sets": 4
+      },
+      {
+        "exercise": "Press militar con barra",
+        "reps": 8,
+        "sets": 4
+      },
+      {
+        "exercise": "Dominadas",
+        "reps": "Max",
+        "sets": 4
+      },
+      {
+        "exercise": "Curl de bíceps con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Extensiones de tríceps con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones de talones con barra",
+        "reps": 15,
+        "sets": 3
+      }
+    ],
+
+  
+    "Viernes": [
+      {
+        "exercise": "Sentadilla frontal",
+        "reps": 8,
+        "sets": 4
+      },
+      {
+        "exercise": "Press de banca inclinado",
+        "reps": 8,
+        "sets": 4
+      },
+      {
+        "exercise": "Remo con mancuernas",
+        "reps": 10,
+        "sets": 4
+      },
+      {
+        "exercise": "Curl de martillo con mancuernas",
+        "reps": 10,
+        "sets": 4
+      },
+      {
+        "exercise": "Extensiones de tríceps en polea alta",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones frontales de hombros con mancuernas",
+        "reps": 12,
+        "sets": 3
+      }
+    ]
+  },
+  "mantenimiento": {
+    "Lunes": [
+      {
+        "exercise": "Press de banca",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Dominadas",
+        "reps": 10,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones laterales de hombros",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Curl de bíceps con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Prensa de piernas",
+        "reps": 12,
+        "sets": 3
+      }
+    ],
+    "Miércoles": [
+      {
+        "exercise": "Sentadillas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Peso muerto",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Press militar con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Crunches",
+        "reps": 15,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones de pantorrillas con mancuernas",
+        "reps": 15,
+        "sets": 3
+      }
+    ],
+    "Jueves": [
+      {
+        "exercise": "Caminadora a ritmo moderado",
+        "duración": "20 minutos"
+      },
+      {
+        "exercise": "Máquina de remo",
+        "duración": "15 minutos"
+      },
+      {
+        "exercise": "Bicicleta estática a resistencia baja",
+        "duración": "20 minutos"
+      },
+      {
+        "exercise": "Escaladora",
+        "duración": "10 minutos"
+      }
+    ],
+    "Viernes": [
+      {
+        "exercise": "Remo con mancuernas",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Fondos de tríceps",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Elevaciones frontales de hombros",
+        "reps": 12,
+        "sets": 3
+      },
+      {
+        "exercise": "Plancha lateral",
+        "reps": "30 segundos",
+        "sets": 3
+      },
+      {
+        "exercise": "Abdominales con rueda",
+        "reps": 12,
+        "sets": 3
+      }
+    ]
+  }
+}
