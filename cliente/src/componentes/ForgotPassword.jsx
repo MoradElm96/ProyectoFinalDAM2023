@@ -9,7 +9,6 @@ import {
   mostrarMensajeExitoSweet,
 } from "../helpers/SweetAlert2";
 
-const URL_ComprobarMail = `${process.env.REACT_APP_API_BASE_URL}/forgotpassword`;
 
 function ForgotPassword() {
   const [emailError, setEmailError] = useState(false);
@@ -37,6 +36,8 @@ function ForgotPassword() {
 
       return;
     }
+    
+const URL_ComprobarMail = `${process.env.REACT_APP_API_BASE_URL}/forgotpassword`;
 
     try {
       const response = await axios.post(URL_ComprobarMail, { email });
