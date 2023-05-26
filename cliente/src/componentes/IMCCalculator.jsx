@@ -76,8 +76,9 @@ function IMCCalculator() {
   };
 
   return (
+    
     <div>
-      <div className="row  justify-content-center custom-columnnImc">
+      <div className="row justify-content-center custom-columnnImc ">
         <div className="col-sm-8 col-md-6 col-lg-4  mt-0">
           <h2 className="text-center ">Calculadora de IMC</h2>
 
@@ -165,6 +166,8 @@ function IMCCalculator() {
         </div>
       </div>
     </div>
+
+  
   );
 }
 

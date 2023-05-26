@@ -18,6 +18,7 @@ function CalculaCalorias() {
   const [edadUsuario, setEdadUsuario] = useState(""); // Estado para almacenar la edad del usuario
   const [nombre, setNombre] = useState(""); // Estado para almacenar el nombre del usuario
   const [apellido, setApellido] = useState(""); // Estado para almacenar el apellido del usuario
+  const [genero, setGenero] = useState("");
   
   const [showModal, setShowModal] = useState(false); // Estado para controlar la visibilidad de un modal
   const [informacion, setInformacion] = useState(""); // Estado para almacenar información adicional
@@ -83,6 +84,11 @@ const handlePesoUsuario = (event) => {
   setPesoUsuario(event.target.value);
 };
 
+//Función que maneja el genero del usuario
+const handleGenero = (event) => {
+  setGenero(event.target.value);
+};
+
 //Estado para controlar el resaltado de algún elemento de la interfaz
 const [highlight, setHighlight] = useState(false);
 
@@ -124,7 +130,8 @@ const obtenerDatosUsuario = async () => {
 };
 // Función asincrónica para obtener los datos del usuario y actualizar los estados correspondientes
 
-const gender = "male";
+
+
 // Género del usuario (valor fijo en este caso)
 
 useEffect(() => {
@@ -138,7 +145,7 @@ useEffect(() => {
   function calculateCalories() {
     let bmr; // Tasa metabólica basal
 
-    if (gender === "male") {
+    if (genero === "Masculino") {
       bmr =
         88.362 +
         13.397 * pesoUsuario +
@@ -222,7 +229,7 @@ useEffect(() => {
              </p>
              <label>Prueba con otros</label>
 
-              <div className="form-group mb-4">
+               <div className="form-group mb-4">
                 <label htmlFor="edad">Edad:</label>
                 <select
                   type="number"
@@ -259,7 +266,25 @@ useEffect(() => {
                     </option>
                   ))}
                 </select>
-              </div>
+              </div> 
+
+              <div className="form-group mb-4">
+        <label htmlFor="gender">Género:</label>
+        <select
+          id="gender"
+          className="form-control"
+          value={genero}
+          onChange={handleGenero}
+        >
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+        </select>
+      </div>
+
+      
+  
+ 
+
             </div>
           </div>
 

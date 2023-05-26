@@ -44,6 +44,7 @@ const URL_ComprobarMail = `${process.env.REACT_APP_API_BASE_URL}/forgotpassword`
 
       // todo
       //console.log("puedo hacer el to do");
+      console.log(email);
       mostrarMensajeExitoSweet("Email enviado, revisa tu bandeja de correo");
       setEmail("");
       //ver si redirigir o no

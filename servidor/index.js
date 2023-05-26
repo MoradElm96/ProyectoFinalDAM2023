@@ -2,8 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const userRoutes = require('./routes/userRoutes');
-const { connectToDatabase} = require('./config/db');
-const cookieParser = require("cookie-parser");
+const { connectToDatabase } = require('./config/db');
+//const cookieParser = require("cookie-parser");
 const session = require("express-session");
 const User = require("./models/user");
 
@@ -33,7 +33,7 @@ app.use(bodyParser.json()); // middleware para analizar JSON
 app.use(bodyParser.urlencoded({ extended: true })); // middleware para analizar datos de formulario
 
 
-app.use(cookieParser());
+//app.use(cookieParser());
 
 
 app.use(session({
