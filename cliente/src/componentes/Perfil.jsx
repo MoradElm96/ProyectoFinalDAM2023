@@ -12,13 +12,12 @@ import ModalPassword from "./cambioPassword/modalPassword";
 import UserAvatar from "./FuncionAvatar";
 
 function Perfil() {
-
   const cerrarSession = () => {
     // Función para cerrar la sesión del usuario
     localStorage.clear(); // Limpiar el almacenamiento local
     navigate(routes.home); // Redirigir a la página de inicio
   };
-  
+
   // Referencias de useState para diferentes campos de usuario
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
@@ -28,13 +27,13 @@ function Perfil() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [deleteAccountChecked, setDeleteAccountChecked] = useState(false);
-  
+
   // Obtener el objeto de sesión del usuario del almacenamiento local
   const objetoSesion = JSON.parse(localStorage.getItem("UsuarioConectado"));
   const userId = objetoSesion.id; // Obtener el ID del usuario de la sesión
-  
+
   const URL_US = `${process.env.REACT_APP_API_BASE_URL}/users/${userId}`;
-  
+
   // Función para obtener los datos del usuario desde el servidor
   const obtenerDatosUsuario = async () => {
     try {
@@ -54,36 +53,34 @@ function Perfil() {
       console.log("error en la parte servidora al obtener los datos");
     }
   };
-  
-
 
   useEffect(() => {
     obtenerDatosUsuario(); // Obtener los datos del usuario al cargar el componente
   }, []);
-  
+
   // Funciones para manejar cambios en los campos del formulario
   const handleEdadChange = (event) => {
     setEdad(event.target.value); // Actualizar el estado de la edad con el valor del campo
   };
-  
+
   const handlePesoChange = (event) => {
     setPeso(event.target.value); // Actualizar el estado del peso con el valor del campo
   };
-  
+
   const handlePasswordChange = (event) => {
     setPassword(event.target.value); // Actualizar el estado de la contraseña con el valor del campo
   };
-  
+
   const handleDeleteAccountChange = (event) => {
     setDeleteAccountChecked(event.target.checked); // Actualizar el estado de eliminar cuenta con el valor del campo
   };
-  
+
   // Función para eliminar la cuenta del usuario por ID
   const eliminarUsuarioPorId = async () => {
     try {
       const response = await axios.delete(URL_US);
       // console.log(response.data); // Agrega esta línea para imprimir la respuesta en la consola
-  
+
       mostrarMensajeExitoSweet("Cuenta eliminada con éxito"); // Mostrar mensaje de éxito
       cerrarSession(); // Cerrar la sesión del usuario
     } catch (error) {
@@ -93,41 +90,40 @@ function Perfil() {
       ); // Mostrar mensaje de error en SweetAlert
     }
   };
-  
-// URL para comparar la contraseña del usuario
-const URL_COMPARE = `${process.env.REACT_APP_API_BASE_URL}/compararClave/${userId}`;
 
-// Función para manejar el envío del formulario de eliminación de cuenta
-const handleDeleteAccountSubmit = async (event) => {
-  event.preventDefault();
+  // URL para comparar la contraseña del usuario
+  const URL_COMPARE = `${process.env.REACT_APP_API_BASE_URL}/compararClave/${userId}`;
 
-  if (rol === 1) {
-    mostrarMensajeErrorSweet(
-      "No puedes eliminar tu cuenta, eres el administrador"
-    ); // Mostrar mensaje de error si el usuario es administrador
-  } else {
-    try {
-      const response = await axios.post(URL_COMPARE, { password });
-      // console.log(response); // Agrega esta línea para imprimir la respuesta en la consola
+  // Función para manejar el envío del formulario de eliminación de cuenta
+  const handleDeleteAccountSubmit = async (event) => {
+    event.preventDefault();
 
-      mostrarMensajeConfirmacion(
-        "¿Estás seguro de que quieres eliminar tu cuenta?",
-        async () => {
-          eliminarUsuarioPorId(); // Llamar a la función que elimina la cuenta del usuario
-        }
-      ); // Mostrar mensaje de confirmación con opción de eliminar cuenta
-    } catch (error) {
-      console.error(error.response.data.message); // Imprimir el mensaje de error en la consola
-      let mensaje = error.response.data.message;
-      let contenidoHTML = `<h3>${mensaje}</h3>`;
-      var divError = document.getElementById("alerta");
-      divError.innerHTML = contenidoHTML;
-      divError.classList.add("alert-danger");
-      mostrarMensajeErrorSweet(mensaje); // Mostrar mensaje de error en SweetAlert
+    if (rol === 1) {
+      mostrarMensajeErrorSweet(
+        "No puedes eliminar tu cuenta, eres el administrador"
+      ); // Mostrar mensaje de error si el usuario es administrador
+    } else {
+      try {
+        const response = await axios.post(URL_COMPARE, { password });
+        // console.log(response); // Agrega esta línea para imprimir la respuesta en la consola
+
+        mostrarMensajeConfirmacion(
+          "¿Estás seguro de que quieres eliminar tu cuenta?",
+          async () => {
+            eliminarUsuarioPorId(); // Llamar a la función que elimina la cuenta del usuario
+          }
+        ); // Mostrar mensaje de confirmación con opción de eliminar cuenta
+      } catch (error) {
+        console.error(error.response.data.message); // Imprimir el mensaje de error en la consola
+        let mensaje = error.response.data.message;
+        let contenidoHTML = `<h3>${mensaje}</h3>`;
+        var divError = document.getElementById("alerta");
+        divError.innerHTML = contenidoHTML;
+        divError.classList.add("alert-danger");
+        mostrarMensajeErrorSweet(mensaje); // Mostrar mensaje de error en SweetAlert
+      }
     }
-  }
-};
-
+  };
 
   const navigate = useNavigate();
   const URL_UPDATE = `${process.env.REACT_APP_API_BASE_URL}/users/update/${userId}`;
@@ -149,11 +145,11 @@ const handleDeleteAccountSubmit = async (event) => {
       // toast.error("Por favor, complete todos los campos.");
       return;
     }
-   //console.log(data);
+    //console.log(data);
 
     try {
       const response = await axios.post(URL_UPDATE, data);
-     // console.log(data);
+      // console.log(data);
       mostrarMensajeExitoSweet("Datos actualizados");
     } catch (error) {
       console.error(error.response.data.message);
@@ -167,8 +163,6 @@ const handleDeleteAccountSubmit = async (event) => {
       mostrarMensajeErrorSweet(mensaje);
     }
   };
-
-
 
   return (
     <div className="container-perfil">
@@ -201,9 +195,9 @@ const handleDeleteAccountSubmit = async (event) => {
             defaultValue={edad}
             required
           >
-            {[...Array(111)].map((_, i) => (
-              <option key={i} value={i}>
-                {i} años
+            {[...Array(95)].map((_, i) => (
+              <option key={i} value={i + 16}>
+                {i + 16} años
               </option>
             ))}
           </select>
