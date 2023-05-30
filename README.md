@@ -1,6 +1,18 @@
 Borrador del proyecto de fin de grado de Dam aplicacion web de ejercicios y entrenamiento
 
 
+Actualizacion 22/05/2023 ( despliegue en amazon, buscar errores que vayan surgiendo y corregirlos)
+
+Se ha creado cuenta en amazon web services
+Se ha utilizado el servicio VPC para poder configurar la region de las instancias, las subredes y tablas de enrutamiento
+Se ha registrado un dominio en el servicio route 53
+Se ha creado una instancia ec2 linux
+Se han configurado grupos de seguridad temporales, ya que tengo que informame bien si son las configuraciones correctas para tener seguridad
+Se ha creado par de claves para acceder a la maquina mediante ssh
+Se ha utilizado el servicio RDS para tener un motor de base de datos y un servidor donde alojar mi base de datos. En mi caso mariaDB.
+Se ha configurado la instancia y se han instalado en ella node y git, para clonar mi repositorio de git y ejecutarlo en modo produccion en la maquina, incluyendo el servidor con pm2.
+Se ha tenido que configurar e instalar un servidor nginx que escuche en el puerto 80, que me sirve la carpeta build con los recursos ya optimizados de mi aplicacion react.
+Se han solucionado los nombres de las variables de entorno temporales para http en el proyecto( tengo que ver como hacer que sea https y tener el certificado), y tambien se han modificado las variables de la bases de datos para poder hacer que apunten al nuevo sitio donde tengo la base de datos.
 Actualizacion 19/05/2023
 
   -  Se ha tocado el css para poner una paleta de colores adecuada para que se vea bien, posiblemente los colores definitivos.
