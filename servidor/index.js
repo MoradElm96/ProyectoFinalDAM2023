@@ -43,7 +43,10 @@ app.use(session({
 }));
 
 // Configuración de las rutas
-app.use(userRoutes);
+//app.use(userRoutes);
+
+//ruta base "/api" a las rutas
+app.use('/api', userRoutes);
 
 const PORT = process.env.PORT || 4000;
 

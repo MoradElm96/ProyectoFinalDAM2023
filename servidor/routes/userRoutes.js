@@ -7,6 +7,10 @@ const favController = require('../controllers/favoritoControlador');
 const rutinasController = require('../controllers/rutinasController');
 const nutricionController = require('../controllers/nutricionController');
 
+// Definir la ruta base "/api"
+router.use('/api', (req, res, next) => {
+  next();
+});
 
 //ruta para crear un usuario
 router.post('/users', userController.createUser);

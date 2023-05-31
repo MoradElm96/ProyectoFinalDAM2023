@@ -158,6 +158,7 @@ const [loading, setLoading] = useState(false); // Estado para indicar si se est�
         //  console.log(response.data);
           //mensaje de confirmación de la eliminación de favoritos
           mostrarMensajeExitoSweet("Se eliminó el favorito correctamente.");
+          window.location.reload();
           // Resetea la lista de ejercicios seleccionados
           setEjerciciosSeleccionados([]);
           const nuevosFavoritos = await obtenerFavoritos();
