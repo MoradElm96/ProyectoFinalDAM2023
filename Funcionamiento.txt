@@ -1,0 +1,5 @@
+Proyecto sin dependencias instaladas.
+Para ejecutar en local , es necesario ejecutar el comando "npm install" dentro de las carpetas cliente y servidor respectivamente.
+Esto instalara las dependencias del package.json para su correcto funcionamiento.
+Una vez realizado se puede ejecutar "npm start" en el cliente y nodemon index.js en el servidor.
+Tener en cuenta el .env para las variables, actualmente estan puestas las variables del entorno de produccion del despliegue en aws.

@@ -1,4 +1,14 @@
-Borrador del proyecto de fin de grado de Dam aplicacion web de ejercicios y entrenamiento
+Proyecto de fin de grado de Dam aplicacion web de ejercicios y entrenamiento
+
+sitio web del despliegue:
+moradhealthyweb.click
+
+
+
+Actualizacion 4/06/2023 ( despliegue en amazon, buscar errores que vayan surgiendo y corregirlos)
+  -Memoria a falta de terminar
+  -Builde de elementos estaticos el front
+
 
 
 Actualizacion 22/05/2023 ( despliegue en amazon, buscar errores que vayan surgiendo y corregirlos)
